@@ -1,0 +1,137 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+	  "color": {"1": "blue", "2": "blue"}
+  },
+  "modules": [
+	{
+		"type": "custom",
+		"format": "┌─────────────── OS Info ────────────────────────┐"
+	},
+    {
+        "type": "title",
+        "key": "  "
+    },
+    {
+        "type": "os",
+        "key": "   OS",
+        "keyColor": "blue"
+    },
+    {
+        "type": "kernel",
+        "key": "   Kernel",
+        "keyColor": "blue"
+    },
+    {
+        "type": "wm",
+        "key": "   WM",
+        "keyColor": "blue"
+    },
+	{
+        "type": "custom",
+        "format": "└────────────────────────────────────────────────┘"
+	},
+    "break",
+	{
+		"type": "custom",
+		"format": "┌─────────────── Hardware Info ──────────────────┐"
+	},
+	{
+		"type": "cpu",
+		"format": "{1}",
+		"key": "   CPU",
+		"keyColor": "red"
+	},
+	{
+		"type": "gpu",
+		"format": "{2}",
+		"key": "   GPU",
+		"keyColor": "red"
+	},
+	{
+		"type": "gpu",
+		"format": "{3}",
+		"key": "   GPU Driver",
+        "keyColor": "magenta"
+	},
+    {
+        "type": "display",
+        "key": "  󰍹  Display",
+        "keyColor": "red"
+    },
+    {
+        "type": "memory",
+        "key": "  ﬙ Memory",
+        "keyColor": "red"
+    },   
+    {
+        "type": "swap",
+        "key": "  ﬙ Swap",
+        "keyColor": "magenta"
+    },   
+    {
+        "type": "disk",
+        "format": "{2}",
+        "key": "  (/) Disk",
+        "keyColor": "red"
+    },   
+	{
+        "type": "custom",
+        "format": "└────────────────────────────────────────────────┘"
+	},
+    "break",
+	{
+		"type": "custom",
+		"format": "┌─────────────── Current Info ───────────────────┐"
+	},
+    {
+        "type": "uptime",
+        "key": "  󱫐 Uptime ",
+        "keyColor": "cyan"
+    },
+    {
+        "type": "packages",
+        "key": "   Packages",
+        "keyColor": "cyan"
+    },
+    {
+        "type": "shell",
+        "key": "   Shell",
+        "keyColor": "yellow"
+    },
+    {
+        "type": "terminal",
+        "key": "   Terminal",
+        "keyColor": "yellow"
+    },
+    {
+        "type": "terminalfont",
+        "key": "    Terminal Font",
+        "keyColor": "yellow"
+    },
+    {
+        "type": "locale",
+        "key": "    Locale",
+        "keyColor": "green"
+    },
+	{
+        "type": "custom",
+        "format": "└────────────────────────────────────────────────┘"
+	},
+    "break",
+	{
+		"type": "custom",
+		"format": "┌─────────────── Colors ─────────────────────────┐"
+	},
+	{
+ 		"type": "colors",
+		"paddingLeft": 17,
+		"symbol": "circle"	
+	},
+	{
+        "type": "custom",
+        "format": "└────────────────────────────────────────────────┘"
+	},
+    "break"
+  ]
+}

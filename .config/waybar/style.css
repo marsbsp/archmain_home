@@ -1,0 +1,106 @@
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+    font-size: 11px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+window#waybar > * {
+	margin-top: 5px;
+}
+
+tooltip,
+#custom-arch_menu,
+#workspaces,
+#workspaces button,
+#tray,
+#hardware,
+#cpu,
+#memory,
+#disk,
+#network,
+#wireplumber,
+#clock {
+    padding: 0 10px;
+	background-color: #11111b;
+    color: #cdd6f4;
+	border-radius: 10px;
+}
+
+#custom-arch_menu {
+	font-size: 15px;
+	padding-left: 6px;
+	margin-left: 0px;
+	color: #1793D1;
+}
+
+#custom-arch_menu:hover {
+	color: #cdd6f4;
+}
+
+#workspaces {
+    background-color: rgba(17, 17, 27, 1);
+	padding: 0;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+	color: #11111b; 
+	background-color: #a6e3a1;
+	border-radius: 7px;
+}
+
+#workspaces button.active {
+	color: #11111b; 
+	background-color: #cdd6f4;
+	border-radius: 7px;
+}
+
+#workspaces button.urgent {
+	color: #11111b; 
+	background-color: #f38ba8;
+	border-radius: 7px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#hardware {
+	padding: 0;
+}
+
+#cpu, #memory, #disk{
+	background-color: transparent;
+	padding: 0 4px;
+}
+
+#cpu {
+	padding-left: 10px;
+}
+
+#disk {
+	padding-right: 10px;
+}
+
+#network {
+	color: #a6e3a1;
+}
+
+#network.disconnected, #wireplumber.muted{
+	color: #f38ba8;
+}
+
+
